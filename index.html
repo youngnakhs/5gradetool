@@ -379,16 +379,16 @@ tbody tr:nth-child(even){background:#fafbfd;}
       <!-- ── 학생 정보 풀폭 바 ── -->
       <div class="landing-stubar">
         <div class="landing-stubar-title">학생 정보</div>
-        <div class="landing-stubar-row">
-          <div class="ii"><label>학교명</label><input class="inp" id="sSch" placeholder="○○고등학교"></div>
-          <div class="ii"><label>담당교사</label><input class="inp" id="sTeacher" placeholder="성명"></div>
-          <div class="ii"><label>학년</label><input class="inp" id="sGrade" placeholder="2"></div>
-          <div class="ii"><label>반</label><input class="inp" id="sClass" placeholder="3"></div>
-          <div class="ii"><label>번호</label><input class="inp" id="sNum" placeholder="15"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;">
           <div class="ii"><label>이름</label><input class="inp" id="sName" placeholder="학생 이름"></div>
-          <div class="ii"><label>상담일자</label><input class="inp" type="date" id="sDate"></div>
           <div class="ii"><label>희망진로</label><input class="inp" id="sCareer" placeholder="의생명과학"></div>
         </div>
+        <input type="hidden" id="sSch" value="">
+        <input type="hidden" id="sTeacher" value="">
+        <input type="hidden" id="sGrade" value="">
+        <input type="hidden" id="sClass" value="">
+        <input type="hidden" id="sNum" value="">
+        <input type="hidden" id="sDate" value="">
       </div>
 
       <!-- ── 2컬럼: 수능 | 비교과+성적 ── -->
