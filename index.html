@@ -8,7 +8,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap');
 :root{
-  --navy:#1a237e;--blue:#1565c0;--bg:#eef2f7;--bd:#e2e8f0;
+  --navy:#1b5e20;--blue:#2e7d32;--bg:#f1f8e9;--bd:#c8e6c9;
   --red:#c62828;--green:#2e7d32;--sub:#64748b;--sub2:#94a3b8;
   --left:300px;
 }
@@ -16,7 +16,7 @@
 html,body{height:100%;font-family:'Noto Sans KR','Malgun Gothic',sans-serif;background:var(--bg);color:#1e293b;font-size:14px;line-height:1.5;}
 
 /* 헤더 */
-.hd{height:54px;background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:0 24px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:200;box-shadow:0 2px 20px rgba(26,35,126,.4);}
+.hd{height:54px;background:linear-gradient(135deg,#1b5e20,#33691e);color:#fff;padding:0 24px;display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:200;box-shadow:0 2px 20px rgba(27,94,32,.4);}
 .hd-title{font-size:17px;font-weight:700;display:flex;align-items:center;gap:10px;}
 .hd-title small{font-size:11px;font-weight:500;opacity:.75;background:rgba(255,255,255,.15);padding:2px 10px;border-radius:20px;border:1px solid rgba(255,255,255,.2);}
 /* 레이아웃 */
@@ -33,17 +33,17 @@ html,body{height:100%;font-family:'Noto Sans KR','Malgun Gothic',sans-serif;back
 .btn:hover{filter:brightness(.9);transform:translateY(-1px);}
 .btn-wh{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.35);}
 .btn-wh:hover{background:rgba(255,255,255,.24);}
-.btn-blue{background:#1565c0;color:#fff;}
+.btn-blue{background:#2e7d32;color:#fff;}
 .btn-sm{padding:5px 11px;font-size:12px;}
 
 /* 입력 */
 .inp{padding:7px 10px;border:1.5px solid #e2e8f0;border-radius:7px;font-size:13px;font-weight:600;font-family:inherit;transition:.15s;background:#fafbfc;color:#1e293b;width:100%;}
-.inp:focus{border-color:var(--blue);outline:none;background:#fff;box-shadow:0 0 0 3px rgba(21,101,192,.08);}
+.inp:focus{border-color:var(--blue);outline:none;background:#fff;box-shadow:0 0 0 3px rgba(46,125,50,.08);}
 select.inp{cursor:pointer;}
 textarea.inp{min-height:100px;resize:vertical;line-height:1.7;}
 
 /* 왼쪽 패널 섹션 */
-.stu-card{background:linear-gradient(160deg,#1a237e,#1565c0);color:#fff;padding:20px 18px;}
+.stu-card{background:linear-gradient(160deg,#1b5e20,#2e7d32);color:#fff;padding:20px 18px;}
 .stu-name{font-size:24px;font-weight:900;letter-spacing:-.5px;line-height:1.2;}
 .stu-sub{font-size:12px;opacity:.8;margin-top:4px;}
 .stu-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
@@ -53,15 +53,15 @@ textarea.inp{min-height:100px;resize:vertical;line-height:1.7;}
 .if-row{display:flex;gap:8px;margin-bottom:8px;}
 .ii{display:flex;flex-direction:column;gap:4px;flex:1;}
 .ii label{font-size:10px;color:var(--sub2);font-weight:700;letter-spacing:.4px;text-transform:uppercase;}
-.upload-btn{background:#1565c0;color:#fff;padding:10px;font-size:13px;border-radius:10px;border:none;cursor:pointer;font-weight:700;width:100%;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;margin-top:4px;}
-.upload-btn:hover{background:#0d47a1;}
+.upload-btn{background:#2e7d32;color:#fff;padding:10px;font-size:13px;border-radius:10px;border:none;cursor:pointer;font-weight:700;width:100%;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;margin-top:4px;}
+.upload-btn:hover{background:#1b5e20;}
 .upzone{padding:22px 14px;border:2px dashed #cbd5e1;border-radius:10px;background:linear-gradient(135deg,#f8fafc,#f0f7ff);cursor:pointer;text-align:center;transition:.2s;line-height:1.8;margin:14px;}
-.upzone:hover,.upzone.drag{border-color:var(--blue);background:#eff6ff;}
-.guide-path{background:#eff6ff;color:#1565c0;padding:7px 12px;border-radius:6px;display:inline-block;font-weight:700;font-size:11px;margin:6px 0;border:1px solid #bfdbfe;line-height:1.6;}
+.upzone:hover,.upzone.drag{border-color:var(--blue);background:#f1f8e9;}
+.guide-path{background:#f1f8e9;color:#2e7d32;padding:7px 12px;border-radius:6px;display:inline-block;font-weight:700;font-size:11px;margin:6px 0;border:1px solid #a5d6a7;line-height:1.6;}
 
 /* 왼쪽 미니 요약 */
 .ms-row{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-radius:8px;background:#f8fafc;border:1px solid #f1f5f9;margin-bottom:6px;}
-.ms-row.core{background:linear-gradient(135deg,#eff6ff,#e8f0fe);border-color:#bfdbfe;}
+.ms-row.core{background:linear-gradient(135deg,#f1f8e9,#e8f5e9);border-color:#a5d6a7;}
 .ms-row.good{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-color:#86efac;}
 .ms-row.bad{background:linear-gradient(135deg,#fff1f2,#ffe4e6);border-color:#fca5a5;}
 .ms-row.warn{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fcd34d;}
@@ -76,9 +76,9 @@ textarea.inp{min-height:100px;resize:vertical;line-height:1.7;}
 .sb .vl{font-size:22px;font-weight:900;color:var(--navy);line-height:1;}
 .sb .sv{font-size:10px;font-weight:700;margin-top:4px;display:inline-block;padding:1px 7px;border-radius:10px;}
 .sb .tr{font-size:11px;font-weight:700;margin-top:3px;}
-.sb.core{background:linear-gradient(135deg,#eff6ff,#e8f0fe);}
-.sb.core .vl{color:#1565c0;}
-.sb.core .sv{background:#dbeafe;color:#1d4ed8;}
+.sb.core{background:linear-gradient(135deg,#f1f8e9,#e8f5e9);}
+.sb.core .vl{color:#2e7d32;}
+.sb.core .sv{background:#c8e6c9;color:#2e7d32;}
 .sb.good{background:linear-gradient(135deg,#f0fdf4,#dcfce7);}
 .sb.good .vl{color:#15803d;}
 .sb.good .sv{background:#dcfce7;color:#166534;}
@@ -187,8 +187,8 @@ tbody tr:nth-child(even){background:#fafbfd;}
 .sgc .snd{font-size:11px;font-weight:700;margin-top:5px;}
 
 /* 진학가이드 */
-.ug{background:linear-gradient(135deg,#eff6ff,#f0f7ff);padding:18px;border-left:5px solid var(--blue);border-radius:12px;border:1px solid #bfdbfe;margin-bottom:16px;}
-.gt th{color:#fff;background:#1565c0;border:1px solid #1e40af;padding:10px;font-size:13px;}
+.ug{background:linear-gradient(135deg,#f1f8e9,#f0f7ff);padding:18px;border-left:5px solid var(--blue);border-radius:12px;border:1px solid #a5d6a7;margin-bottom:16px;}
+.gt th{color:#fff;background:#2e7d32;border:1px solid #1b5e20;padding:10px;font-size:13px;}
 .gt td{padding:10px;font-size:13px;}
 .gt .c1{background:#0284c7;}
 .gt .c2{background:#7c3aed;}
@@ -217,21 +217,33 @@ tbody tr:nth-child(even){background:#fafbfd;}
 
 /* 인쇄 */
 @media print{
-  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
-  .no-print,.left{display:none!important;}
-  .app{display:block;padding-top:0;height:auto;overflow:visible;}
-  .hd{position:relative;background:#1a237e!important;}
-  .right{padding:0;overflow:visible;}
-  .tab-wrap{box-shadow:none;border:none;}
-  .tab-hd{display:none;}
-  .tab-body{padding:5px 0;}
-  .tab-p{display:block!important;}
-  .sum-bar{grid-template-columns:repeat(7,1fr);}
-  .chart-grid,.form-row{grid-template-columns:1fr 1fr;}
-  .sgoal-row{grid-template-columns:repeat(5,1fr);}
-  .ug{page-break-before:always;}
-  .sim-panel{display:none!important;}
-  @page{size:A4;margin:12mm;}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;font-size:11px!important;}
+  .no-print,.left,.hd,.tab-hd,.sim-panel,.fbar,.landing-page{display:none!important;}
+  #landing{display:none!important;}
+  #analysisView{display:block!important;flex:none!important;overflow:visible!important;}
+  .app{display:block!important;padding-top:0!important;height:auto!important;overflow:visible!important;}
+  .right{padding:0!important;overflow:visible!important;display:block!important;}
+  /* 성적표 탭만 표시 */
+  .tab-p{display:none!important;}
+  #tab-성적표{display:block!important;}
+  .tab-wrap{box-shadow:none!important;border:none!important;}
+  .tab-body{padding:2px 0!important;}
+  /* 테이블 압축 */
+  table{font-size:10px!important;}
+  th,td{padding:5px 5px!important;font-size:10px!important;}
+  .sum-bar{grid-template-columns:repeat(7,1fr);gap:5px!important;padding:10px!important;}
+  .sb .vl{font-size:16px!important;}
+  .sb .lb{font-size:9px!important;}
+  .sb .sv{font-size:9px!important;}
+  .gr-badge{font-size:11px!important;height:20px!important;min-width:22px!important;}
+  /* 페이지 설정 */
+  @page{size:A4 portrait;margin:10mm 12mm;}
+  /* 인쇄 헤더 */
+  .print-hd{display:block!important;}
+  /* 결과영역 표시 */
+  #resultArea{display:flex!important;flex-direction:column!important;gap:8px!important;}
+  /* 차트/목표/전략/가이드 숨김 */
+  #tab-차트,#tab-전형분석,#tab-목표대학,#tab-지원전략,#tab-진학가이드{display:none!important;}
 }
 /* 수능 예상 등급 입력 */
 .suneung-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;}
@@ -252,25 +264,46 @@ tbody tr:nth-child(even){background:#fafbfd;}
 .slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 .slot-card{border-radius:10px;padding:14px;border:1.5px solid;text-align:center;}
 .slot-card.safe{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-color:#86efac;}
-.slot-card.aim{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-color:#93c5fd;}
+.slot-card.aim{background:linear-gradient(135deg,#f1f8e9,#c8e6c9);border-color:#81c784;}
 .slot-card.high{background:linear-gradient(135deg,#fff7ed,#ffedd5);border-color:#fdba74;}
 .slot-card .st{font-size:10px;font-weight:700;color:var(--sub);margin-bottom:6px;}
 .slot-card .sv{font-size:13px;font-weight:800;color:var(--navy);line-height:1.4;}
 .slot-card .sd{font-size:10px;color:var(--sub);margin-top:5px;line-height:1.5;}
 .sixcard{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:10px;}
 .sc{border-radius:8px;padding:10px 4px;text-align:center;border:1.5px solid;}
-.sc.kyo{background:#eff6ff;border-color:#93c5fd;}
+.sc.kyo{background:#f1f8e9;border-color:#81c784;}
 .sc.jong{background:#f5f3ff;border-color:#c4b5fd;}
 .sc.nol{background:#fff7ed;border-color:#fdba74;}
 .sc.etc{background:#f8fafc;border-color:#cbd5e1;}
 .sc .sct{font-size:9px;font-weight:700;color:var(--sub);margin-bottom:4px;}
 .sc .scv{font-size:12px;font-weight:800;color:var(--navy);}
 
+/* 입력 모드 탭 */
+.mode-tabs{display:flex;gap:4px;padding:12px 14px 0;}
+.mode-tab{flex:1;padding:8px 4px;border:1.5px solid #e2e8f0;border-radius:8px;cursor:pointer;font-size:12px;font-weight:700;font-family:inherit;background:#f8fafc;color:var(--sub);transition:.15s;text-align:center;}
+.mode-tab.on{background:var(--blue);color:#fff;border-color:var(--blue);}
+.mode-tab:hover:not(.on){background:#f1f8e9;border-color:#81c784;color:var(--navy);}
+
+/* 직접 입력 폼 */
+.di-table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:8px;}
+.di-table th{background:#f1f5f9;padding:7px 6px;font-size:11px;font-weight:700;color:var(--sub);border-bottom:2px solid #e2e8f0;text-align:center;}
+.di-table td{padding:5px 4px;border-bottom:1px solid #f1f5f9;text-align:center;vertical-align:middle;}
+.di-inp{padding:5px 6px;border:1.5px solid #e2e8f0;border-radius:6px;font-size:12px;font-weight:600;font-family:inherit;width:100%;background:#fafbfc;text-align:center;}
+.di-inp:focus{border-color:var(--blue);outline:none;background:#fff;}
+.di-gr{font-size:13px;font-weight:800;color:var(--navy);}
+.di-del{background:none;border:none;cursor:pointer;color:#fca5a5;font-size:16px;font-weight:700;padding:2px 6px;}
+.di-del:hover{color:#dc2626;}
+.di-add-btn{width:100%;padding:8px;border:1.5px dashed #cbd5e1;border-radius:8px;background:#f8fafc;color:var(--sub);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:10px;transition:.15s;}
+.di-add-btn:hover{border-color:var(--blue);color:var(--blue);background:#f1f8e9;}
+.di-start-btn{width:100%;padding:11px;border:none;border-radius:10px;background:linear-gradient(135deg,#2e7d32,#1b5e20);color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px;}
+.di-start-btn:hover{filter:brightness(1.1);}
+.di-notice{font-size:10px;color:var(--sub2);line-height:1.6;padding:8px;background:#fffbeb;border-radius:6px;border:1px solid #fde68a;margin-bottom:10px;}
+
 /* 인쇄 헤더 (화면에서는 숨김) */
 .print-hd{display:none;}
 @media print{
-  .print-hd{display:block!important;border:2px solid #1a237e;padding:12px 16px;margin-bottom:14px;page-break-after:avoid;}
-  .print-hd-title{font-size:15px;font-weight:900;color:#1a237e;text-align:center;padding-bottom:8px;margin-bottom:8px;border-bottom:2px solid #1a237e;}
+  .print-hd{display:block!important;border:2px solid #1b5e20;padding:12px 16px;margin-bottom:14px;page-break-after:avoid;}
+  .print-hd-title{font-size:15px;font-weight:900;color:#1b5e20;text-align:center;padding-bottom:8px;margin-bottom:8px;border-bottom:2px solid #1b5e20;}
   .print-hd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 20px;margin-bottom:10px;}
   .print-hd-item{display:flex;flex-direction:column;gap:2px;}
   .print-hd-label{font-size:10px;color:#64748b;font-weight:700;}
@@ -280,9 +313,29 @@ tbody tr:nth-child(even){background:#fafbfd;}
   .print-sig-line{border-bottom:1px solid #333;height:22px;margin-bottom:4px;}
 }
 
+/* 랜딩 페이지 */
+.landing-page{flex:1;overflow-y:auto;padding:24px 20px;background:var(--bg);display:flex;justify-content:center;align-items:flex-start;}
+.landing-card{background:#fff;border-radius:16px;border:1px solid var(--bd);box-shadow:0 4px 20px rgba(27,94,32,.1);padding:0;width:100%;max-width:900px;overflow:hidden;}
+.landing-hd{text-align:center;padding:22px 30px 18px;border-bottom:1.5px solid var(--bd);background:linear-gradient(135deg,#f1f8e9,#e8f5e9);}
+.landing-hd-title{font-size:20px;font-weight:900;color:var(--navy);display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:5px;}
+.landing-hd-sub{font-size:12px;color:var(--sub);line-height:1.6;}
+/* 학생정보 풀폭 바 */
+.landing-stubar{padding:18px 28px;background:#fff;border-bottom:1.5px solid var(--bd);}
+.landing-stubar-title{font-size:10px;font-weight:700;color:var(--sub2);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:5px;}
+.landing-stubar-title::before{content:'';width:3px;height:11px;background:var(--blue);border-radius:2px;flex-shrink:0;}
+.landing-stubar-row{display:grid;grid-template-columns:2fr 1fr 0.7fr 0.7fr 0.7fr 1.5fr 1.2fr 1.5fr;gap:8px;align-items:end;}
+.landing-body{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:none;}
+.landing-col{padding:22px 28px;}
+.landing-col:first-child{border-right:1.5px solid var(--bd);}
+.landing-sec{margin-bottom:18px;}
+.landing-sec-title{font-size:10px;font-weight:700;color:var(--sub2);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:5px;}
+.landing-sec-title::before{content:'';width:3px;height:11px;background:var(--blue);border-radius:2px;flex-shrink:0;}
 @media(max-width:900px){
   .app{flex-direction:column;overflow:auto;height:auto;}
   .left{width:100%;min-width:0;}
+  .landing-stubar-row{grid-template-columns:1fr 1fr 1fr 1fr;}
+  .landing-body{grid-template-columns:1fr;}
+  .landing-col:first-child{border-right:none;border-bottom:1.5px solid var(--bd);}
   .chart-grid,.form-row{grid-template-columns:1fr;}
   .sgoal-row{grid-template-columns:repeat(3,1fr);}
   .sum-bar{grid-template-columns:repeat(4,1fr);}
@@ -295,6 +348,7 @@ tbody tr:nth-child(even){background:#fafbfd;}
 
 <div class="hd">
   <div class="hd-title">📊 학생 성적 분석 상담 도구 <small>교과·종합·정시 진학 가이드</small></div>
+<div style="font-size:11px;color:rgba(255,255,255,.75);font-weight:500;">원작자: 김종범 선생님 (영락고등학교)</div>
   <div style="display:flex;gap:8px;" class="no-print">
     <button class="btn btn-wh" onclick="resetAll()">🔄 초기화</button>
     <button class="btn btn-wh" onclick="window.print()">🖨️ 인쇄 / PDF</button>
@@ -310,243 +364,316 @@ tbody tr:nth-child(even){background:#fafbfd;}
   </div>
 </div>
 
-<div class="app">
-  <!-- 왼쪽 패널 -->
-  <div class="left">
-    <div class="stu-card">
-      <div class="stu-name" id="sbName">학생 이름</div>
-      <div class="stu-sub" id="sbMeta">학교 · 학년반번호</div>
-      <div class="stu-tags" id="sbTags"></div>
-    </div>
+<div class="app" id="app">
 
-    <div class="lsec no-print">
-      <div class="lsec-title">학생 정보</div>
-      <div class="if-row">
-        <div class="ii" style="flex:2"><label>학교명</label><input class="inp" id="sSch" placeholder="○○고등학교"></div>
-        <div class="ii"><label>담당교사</label><input class="inp" id="sTeacher" placeholder="성명"></div>
-      </div>
-      <div class="if-row">
-        <div class="ii"><label>학년</label><input class="inp" id="sGrade" placeholder="2"></div>
-        <div class="ii"><label>반</label><input class="inp" id="sClass" placeholder="3"></div>
-        <div class="ii"><label>번호</label><input class="inp" id="sNum" placeholder="15"></div>
-        <div class="ii" style="flex:2"><label>이름</label><input class="inp" id="sName" placeholder="학생 이름"></div>
-      </div>
-      <div class="if-row">
-        <div class="ii"><label>상담일자</label><input class="inp" type="date" id="sDate"></div>
-        <div class="ii" style="flex:1.5"><label>희망진로</label><input class="inp" id="sCareer" placeholder="예: 의생명과학"></div>
-      </div>
-      <input type="file" id="exF" accept=".xls,.xlsx,.csv" style="display:none">
-      <button class="upload-btn" id="uploadBtn">📁 엑셀 성적 파일 올리기</button>
-    </div>
+  <!-- ═══════ Phase 1: 랜딩 / 입력 페이지 ═══════ -->
+  <div id="landing" class="landing-page">
+    <div class="landing-card">
 
-    <div id="leftSummary" style="display:none;">
-      <div class="lsec">
-        <div class="lsec-title">성적 요약</div>
-        <div id="miniSum"></div>
-      </div>
-      <div class="lsec">
-        <div class="lsec-title">강 · 약점</div>
-        <div id="awLeft"></div>
-      </div>
-      <div class="lsec">
-        <div class="lsec-title">상담 메모</div>
-        <div style="margin-bottom:8px;"><label style="font-size:11px;color:var(--sub2);font-weight:700;display:block;margin-bottom:4px;">📝 상담 내용</label><textarea class="inp" id="memo1" rows="4" placeholder="상담 내용, 특이사항..."></textarea></div>
-        <div><label style="font-size:11px;color:var(--sub2);font-weight:700;display:block;margin-bottom:4px;">🎯 진학 지도 방향</label><textarea class="inp" id="memo2" rows="4" placeholder="목표 대학, 지도 방향..."></textarea></div>
+      <!-- 상단 타이틀 -->
+      <div class="landing-hd">
+        <div class="landing-hd-title">📊 학생 성적 분석 상담 도구</div>
+        <div class="landing-hd-sub">학생 정보와 성적을 입력한 후 분석 시작을 누르세요</div>
       </div>
 
-      <!-- 수능 예상 등급 입력 -->
-      <div class="lsec no-print">
-        <div class="lsec-title">수능 예상 등급 <span style="font-size:9px;font-weight:400;color:var(--sub2);">(수능 최저 충족 분석)</span></div>
-        <div class="suneung-grid">
-          <div class="suneung-item"><label>국어</label><input class="inp" id="snKor" type="number" min="1" max="9" placeholder="1~9"></div>
-          <div class="suneung-item"><label>수학</label><input class="inp" id="snMath" type="number" min="1" max="9" placeholder="1~9"></div>
-          <div class="suneung-item"><label>영어</label><input class="inp" id="snEng" type="number" min="1" max="9" placeholder="1~9"></div>
-          <div class="suneung-item"><label>탐구①</label><input class="inp" id="snT1" type="number" min="1" max="9" placeholder="1~9"></div>
-          <div class="suneung-item"><label>탐구②</label><input class="inp" id="snT2" type="number" min="1" max="9" placeholder="1~9"></div>
+      <!-- ── 학생 정보 풀폭 바 ── -->
+      <div class="landing-stubar">
+        <div class="landing-stubar-title">학생 정보</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;">
+          <div class="ii"><label>이름</label><input class="inp" id="sName" placeholder="학생 이름"></div>
+          <div class="ii"><label>희망진로</label><input class="inp" id="sCareer" placeholder="의생명과학"></div>
         </div>
+        <input type="hidden" id="sSch" value="">
+        <input type="hidden" id="sTeacher" value="">
+        <input type="hidden" id="sGrade" value="">
+        <input type="hidden" id="sClass" value="">
+        <input type="hidden" id="sNum" value="">
+        <input type="hidden" id="sDate" value="">
       </div>
 
-      <!-- 비교과 활동 입력 -->
-      <div class="lsec no-print">
-        <div class="lsec-title">비교과 활동 <span style="font-size:9px;font-weight:400;color:var(--sub2);">(종합전형 경쟁력 반영)</span></div>
-        <div class="bk-row">
-          <div class="bk-item"><label>📖 세부능력특기사항</label>
-            <select class="inp" id="bkSeTeuk" style="width:auto;">
-              <option value="3">매우 우수</option>
-              <option value="2" selected>우수</option>
-              <option value="1">보통</option>
-              <option value="0">미흡</option>
-            </select>
+      <!-- ── 2컬럼: 수능 | 비교과+성적 ── -->
+      <div class="landing-body">
+
+        <!-- ─── 좌측: 수능 ─── -->
+        <div class="landing-col">
+          <div class="landing-sec" style="margin-bottom:0;">
+            <div class="landing-sec-title">수능 예상 등급 <span style="font-size:9px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--sub2);">(수능 최저 충족 분석)</span></div>
+            <div class="suneung-grid">
+              <div class="suneung-item"><label>국어</label><input class="inp" id="snKor" type="number" min="1" max="9" placeholder="1~9"></div>
+              <div class="suneung-item"><label>수학</label><input class="inp" id="snMath" type="number" min="1" max="9" placeholder="1~9"></div>
+              <div class="suneung-item"><label>영어</label><input class="inp" id="snEng" type="number" min="1" max="9" placeholder="1~9"></div>
+              <div class="suneung-item"><label>탐구①</label><input class="inp" id="snT1" type="number" min="1" max="9" placeholder="1~9"></div>
+              <div class="suneung-item"><label>탐구②</label><input class="inp" id="snT2" type="number" min="1" max="9" placeholder="1~9"></div>
+            </div>
           </div>
-          <div class="bk-item"><label>🎭 동아리 활동</label>
-            <select class="inp" id="bkDongari" style="width:auto;">
-              <option value="3">우수 (전공연계)</option>
-              <option value="2" selected>보통</option>
-              <option value="1">미흡</option>
-            </select>
-          </div>
-          <div class="bk-item"><label>🤝 봉사활동 시간</label>
-            <input class="inp" id="bkBongsa" type="number" min="0" placeholder="예: 50" style="width:90px;text-align:center;">
-          </div>
-          <div class="bk-item"><label>🏆 수상 실적</label>
-            <select class="inp" id="bkSusang" style="width:auto;">
-              <option value="2">우수 (3개 이상)</option>
-              <option value="1" selected>보통 (1~2개)</option>
-              <option value="0">없음</option>
-            </select>
+
+          <div class="landing-sec" style="margin-top:20px;margin-bottom:0;">
+            <div class="landing-sec-title">비교과 활동 <span style="font-size:9px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--sub2);">(종합전형 경쟁력 반영)</span></div>
+            <div class="bk-row">
+              <div class="bk-item"><label>📖 세부능력특기사항</label>
+                <select class="inp" id="bkSeTeuk" style="width:auto;">
+                  <option value="3">매우 우수</option>
+                  <option value="2" selected>우수</option>
+                  <option value="1">보통</option>
+                  <option value="0">미흡</option>
+                </select>
+              </div>
+              <div class="bk-item"><label>🎭 동아리 활동</label>
+                <select class="inp" id="bkDongari" style="width:auto;">
+                  <option value="3">우수 (전공연계)</option>
+                  <option value="2" selected>보통</option>
+                  <option value="1">미흡</option>
+                </select>
+              </div>
+              <div class="bk-item"><label>🤝 봉사활동 시간</label>
+                <input class="inp" id="bkBongsa" type="number" min="0" placeholder="시간 (예: 50)" style="width:120px;text-align:center;">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div id="leftUpload">
-      <div class="upzone" id="upzone">
-        <div style="font-size:26px;margin-bottom:8px;">📂</div>
-        <div style="font-size:13px;font-weight:700;color:var(--blue);margin-bottom:6px;">클릭하거나 파일을 드래그하세요</div>
-        <div class="guide-path">UNIV → 성적관리 → 학생부성적관리<br>[교과/비교과] → 학생선택 → <span style="color:var(--red)">[엑셀저장]</span></div>
-        <div style="font-size:11px;color:var(--sub2);margin-top:6px;">.xls · .xlsx · .csv 지원</div>
+        <!-- ─── 우측: 성적입력 ─── -->
+        <div class="landing-col">
+          <div class="landing-sec" style="margin-bottom:0;">
+            <div class="landing-sec-title">성적 입력</div>
+            <input type="file" id="exF" accept=".xls,.xlsx,.csv" style="display:none">
+            <div class="mode-tabs" style="padding:0 0 10px 0;">
+              <button class="mode-tab on" id="modeExcel" onclick="switchInputMode('excel')">📁 엑셀 업로드</button>
+              <button class="mode-tab" id="modeDirect" onclick="switchInputMode('direct')">✏️ 직접 입력</button>
+            </div>
+
+            <div id="excelZone">
+              <div class="upzone" id="upzone">
+                <div style="font-size:26px;margin-bottom:8px;">📂</div>
+                <div style="font-size:13px;font-weight:700;color:var(--blue);margin-bottom:6px;">클릭하거나 파일을 드래그하세요</div>
+                <div class="guide-path">UNIV → 성적관리 → 학생부성적관리<br>[교과/비교과] → 학생선택 → <span style="color:var(--red)">[엑셀저장]</span></div>
+                <div style="font-size:11px;color:var(--sub2);margin-top:6px;">.xls · .xlsx · .csv 지원</div>
+              </div>
+              <button class="upload-btn" id="uploadBtn" style="margin:0 0 4px 0;">📁 엑셀 파일 선택하기</button>
+            </div>
+
+            <div id="directZone" style="display:none;">
+              <div class="di-notice">
+                ✏️ 성적이 없는 1학년 또는 예상 성적 기반 상담에 활용하세요.<br>
+                <b>석차</b>와 <b>재적수</b>를 입력하면 등급이 자동 계산됩니다.
+              </div>
+              <div class="if-row" style="margin-bottom:10px;">
+                <div class="ii">
+                  <label>학년</label>
+                  <select class="inp" id="diGrade">
+                    <option value="1">1학년</option>
+                    <option value="2">2학년</option>
+                    <option value="3">3학년</option>
+                  </select>
+                </div>
+                <div class="ii">
+                  <label>학기</label>
+                  <select class="inp" id="diSem">
+                    <option value="1">1학기</option>
+                    <option value="2">2학기</option>
+                  </select>
+                </div>
+              </div>
+              <table class="di-table">
+                <thead>
+                  <tr>
+                    <th style="text-align:left;padding-left:6px;">교과·과목</th>
+                    <th style="width:9%">단위</th>
+                    <th style="width:20%">석차</th>
+                    <th style="width:20%">재적수</th>
+                    <th style="width:11%">등급</th>
+                    <th style="width:7%"></th>
+                  </tr>
+                </thead>
+                <tbody id="diRows"></tbody>
+              </table>
+              <button class="di-add-btn" onclick="addDirectRow()">+ 과목 추가</button>
+              <button class="di-start-btn" onclick="startDirectAnalysis()">📊 분석 시작</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <!-- 오른쪽 패널 -->
-  <div class="right">
-    <!-- 인쇄 전용 헤더 (화면에서 숨김) -->
-    <div id="printHd" class="print-hd">
-      <div class="print-hd-title">📊 진학 상담 결과 보고서</div>
-      <div class="print-hd-grid">
-        <div class="print-hd-item"><div class="print-hd-label">학교명</div><div class="print-hd-value" id="phSchool"></div></div>
-        <div class="print-hd-item"><div class="print-hd-label">학생</div><div class="print-hd-value" id="phStudent"></div></div>
-        <div class="print-hd-item"><div class="print-hd-label">상담일</div><div class="print-hd-value" id="phDate"></div></div>
-        <div class="print-hd-item"><div class="print-hd-label">담당교사</div><div class="print-hd-value" id="phTeacher"></div></div>
-        <div class="print-hd-item"><div class="print-hd-label">희망진로</div><div class="print-hd-value" id="phCareer"></div></div>
-        <div class="print-hd-item"><div class="print-hd-label">국영수사과 등급</div><div class="print-hd-value" id="phGrade"></div></div>
+  <!-- ═══════ Phase 2: 분석 화면 ═══════ -->
+  <div id="analysisView" style="display:none;flex:1;overflow:hidden;display:flex;">
+
+    <!-- 왼쪽 패널 -->
+    <div class="left">
+      <div class="stu-card">
+        <div class="stu-name" id="sbName">학생 이름</div>
+        <div class="stu-sub" id="sbMeta">학교 · 학년반번호</div>
+        <div class="stu-tags" id="sbTags"></div>
       </div>
-      <div class="print-sig">
-        <div class="print-sig-box"><div class="print-sig-line"></div>학생 확인</div>
-        <div class="print-sig-box"><div class="print-sig-line"></div>담당교사 서명</div>
-        <div class="print-sig-box"><div class="print-sig-line"></div>학부모 확인</div>
-      </div>
-    </div>
-    <div id="rightEmpty" style="flex:1;display:flex;align-items:center;justify-content:center;min-height:400px;">
-      <div style="text-align:center;padding:40px;background:#fff;border-radius:16px;border:2px dashed #cbd5e1;max-width:480px;box-shadow:0 4px 24px rgba(0,0,0,.06);">
-        <div style="font-size:48px;margin-bottom:14px;">📊</div>
-        <div style="font-size:18px;font-weight:700;color:var(--navy);margin-bottom:8px;">성적 분석 상담 도구</div>
-        <div style="font-size:13px;color:var(--sub);line-height:1.8;">왼쪽에서 학생 정보 입력 후<br>엑셀 성적 파일을 업로드하면<br>분석 결과가 자동으로 표시됩니다.</div>
-      </div>
-    </div>
 
-    <div id="resultArea" style="display:none;flex-direction:column;gap:14px;">
-      <div class="sum-bar" id="sumBar"></div>
-      <div class="tab-wrap">
-        <div class="tab-hd">
-          <div class="tab-hd-top">
-            <span id="printInfo" style="font-size:12px;color:var(--sub);"></span>
-            <div class="tabs">
-              <div class="tab on" onclick="switchTab(this,'성적표')">📋 성적표</div>
-              <div class="tab" onclick="switchTab(this,'차트')">📈 차트</div>
-              <div class="tab" onclick="switchTab(this,'전형분석')">🎯 전형 분석</div>
-              <div class="tab" onclick="switchTab(this,'목표대학')">🏫 목표 대학</div>
-              <div class="tab" onclick="switchTab(this,'지원전략')">🗺️ 지원 전략</div>
-              <div class="tab" onclick="switchTab(this,'진학가이드')">🎓 진학 가이드</div>
-            </div>
+      <!-- 비교과·수능 요약 + 수정 버튼 -->
+      <div class="lsec" style="padding-top:12px;padding-bottom:12px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+          <div style="flex:1;">
+            <div class="lsec-title" style="margin-bottom:6px;">비교과 · 수능 현황</div>
+            <div id="bkCompact" style="font-size:11px;color:var(--sub);line-height:1.8;"></div>
+            <div id="snCompact" style="font-size:11px;color:var(--sub);margin-top:2px;"></div>
           </div>
-        </div>
-        <div class="tab-body">
-
-          <!-- 성적표 -->
-          <div class="tab-p on" id="tab-성적표">
-            <!-- 전체 석차 조절 -->
-            <div class="sim-panel no-print">
-              <div class="sim-panel-hd">
-                <span class="sim-panel-title">📊 석차 시뮬레이션 — "만약 석차가 변한다면?" 상담용 도구</span>
-                <button class="sbn rst" onclick="resetAllSim()">🔄 전체 초기화</button>
-              </div>
-              <div class="sim-controls">
-                <div class="sim-grp"><label>전체 ▲ 상승:</label>
-                  <button class="sbn up" onclick="adjustGlobal(-1)">▲1등</button>
-                  <button class="sbn up" onclick="adjustGlobal(-5)">▲5등</button>
-                  <button class="sbn up" onclick="adjustGlobal(-10)">▲10등</button>
-                </div>
-                <div class="sim-div"></div>
-                <div class="sim-grp"><label>현재 상태:</label><span class="sim-status" id="globalDisp">현재 석차</span></div>
-                <div class="sim-div"></div>
-                <div class="sim-grp"><label>전체 ▼ 하락:</label>
-                  <button class="sbn dn" onclick="adjustGlobal(1)">▼1등</button>
-                  <button class="sbn dn" onclick="adjustGlobal(5)">▼5등</button>
-                  <button class="sbn dn" onclick="adjustGlobal(10)">▼10등</button>
-                </div>
-                <div class="sim-div"></div>
-                <div style="font-size:12px;color:#6d28d9;background:#fff;padding:5px 12px;border-radius:8px;border:1px solid #c4b5fd;">💡 각 과목 행에서 개별 조절도 가능</div>
-              </div>
-            </div>
-            <!-- 필터 -->
-            <div class="fbar no-print">
-              <span style="font-size:11px;font-weight:700;color:var(--sub2);text-transform:uppercase;letter-spacing:.5px;">필터</span>
-              <select class="inp" id="fG" onchange="renderTable()" style="width:auto;">
-                <option value="all">전체 학년</option>
-                <option value="1">1학년</option><option value="2">2학년</option><option value="3">3학년</option>
-              </select>
-              <select class="inp" id="fS" onchange="renderTable()" style="width:auto;">
-                <option value="all">전체 학기</option>
-                <option value="1학기">1학기</option><option value="2학기">2학기</option>
-              </select>
-              <select class="inp" id="fB" onchange="renderTable()" style="width:auto;">
-                <option value="all">전체 교과</option>
-                <option value="국어">국어</option><option value="수학">수학</option>
-                <option value="영어">영어</option><option value="사회">사회</option><option value="과학">과학</option>
-              </select>
-              <button class="btn btn-sm" style="background:#1a237e;color:#fff;" onclick="sortDefault()">기본 정렬</button>
-              <span id="rowCount" style="margin-left:auto;font-size:12px;color:var(--sub2);"></span>
-            </div>
-            <div id="gradeTable"></div>
-          </div>
-
-          <!-- 차트 -->
-          <div class="tab-p" id="tab-차트">
-            <div class="chart-grid" style="margin-bottom:16px;">
-              <div class="chart-box"><h4>학기별 국영수사과 평균 추이</h4><svg id="trendSVG" width="100%" height="210" viewBox="0 0 420 210"></svg></div>
-              <div class="chart-box"><h4>교과별 평균 레이더</h4><svg id="radarSVG" width="100%" height="210" viewBox="0 0 300 210"></svg></div>
-            </div>
-            <div class="chart-grid">
-              <div class="chart-box"><h4>과목별 원점수 vs 평균</h4><svg id="barSVG" width="100%" height="210" viewBox="0 0 500 210"></svg></div>
-              <div class="chart-box"><h4>교과 조합별 환산 등급</h4><div id="comboTable" style="overflow-x:auto;border-radius:8px;border:1px solid var(--bd);"></div></div>
-            </div>
-          </div>
-
-          <!-- 전형분석 -->
-          <div class="tab-p" id="tab-전형분석"><div id="formContent"></div></div>
-
-          <!-- 목표대학 -->
-          <div class="tab-p" id="tab-목표대학">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;" class="no-print">
-              <label style="font-size:13px;font-weight:700;color:var(--navy);">🎯 목표 대학군:</label>
-              <select class="inp" id="goalSel" onchange="renderGoal()" style="width:auto;">
-                <option value="0">메디컬·최상위</option><option value="1">서울 상위권</option>
-                <option value="2" selected>서울 중상위권</option><option value="3">서울 중위권</option>
-                <option value="4">서울·수도권 주요</option><option value="5">거점 국립대학</option>
-                <option value="6">수도권 중하위권</option>
-              </select>
-            </div>
-            <div id="goalContent"></div>
-          </div>
-
-          <!-- 지원전략 -->
-          <div class="tab-p" id="tab-지원전략"></div>
-
-          <!-- 진학가이드 -->
-          <div class="tab-p" id="tab-진학가이드">
-            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;" class="no-print">
-              <span style="font-size:13px;font-weight:700;">재적 인원 기준:</span>
-              <input type="number" class="inp" id="stdN" value="150" onchange="renderGuide()" style="width:65px;text-align:center;">
-              <span style="font-size:13px;">명</span>
-            </div>
-            <div id="guideContent"></div>
-          </div>
-
+          <button onclick="backToLanding()" style="padding:5px 9px;border:1.5px solid var(--bd);border-radius:7px;background:#f8fafc;color:var(--blue);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;flex-shrink:0;">✏️ 수정</button>
         </div>
       </div>
+
+      <!-- 성적 로드 후: 요약·강약점·메모 -->
+      <div id="leftSummary" style="display:none;">
+        <div class="lsec">
+          <div class="lsec-title">성적 요약</div>
+          <div id="miniSum"></div>
+        </div>
+        <div class="lsec">
+          <div class="lsec-title">강 · 약점</div>
+          <div id="awLeft"></div>
+        </div>
+        <div class="lsec">
+          <div class="lsec-title">상담 메모</div>
+          <div style="margin-bottom:8px;"><label style="font-size:11px;color:var(--sub2);font-weight:700;display:block;margin-bottom:4px;">📝 상담 내용</label><textarea class="inp" id="memo1" rows="4" placeholder="상담 내용, 특이사항..."></textarea></div>
+          <div><label style="font-size:11px;color:var(--sub2);font-weight:700;display:block;margin-bottom:4px;">🎯 진학 지도 방향</label><textarea class="inp" id="memo2" rows="4" placeholder="목표 대학, 지도 방향..."></textarea></div>
+        </div>
+      </div>
+
+      <!-- 처음으로 버튼 -->
+      <div class="lsec no-print" style="padding-top:6px;padding-bottom:14px;">
+        <button onclick="backToLanding()" style="width:100%;padding:9px;border:1.5px solid var(--bd);border-radius:8px;background:#f8fafc;color:var(--sub);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;transition:.15s;" onmouseover="this.style.background='#f1f8e9';this.style.color='var(--blue)'" onmouseout="this.style.background='#f8fafc';this.style.color='var(--sub)'">← 처음으로 (입력 수정)</button>
+      </div>
     </div>
+
+    <!-- 오른쪽 패널 -->
+    <div class="right">
+      <!-- 인쇄 전용 헤더 -->
+      <div id="printHd" class="print-hd">
+        <div class="print-hd-title">📊 진학 상담 결과 보고서</div>
+        <div class="print-hd-grid">
+          <div class="print-hd-item"><div class="print-hd-label">학교명</div><div class="print-hd-value" id="phSchool"></div></div>
+          <div class="print-hd-item"><div class="print-hd-label">학생</div><div class="print-hd-value" id="phStudent"></div></div>
+          <div class="print-hd-item"><div class="print-hd-label">상담일</div><div class="print-hd-value" id="phDate"></div></div>
+          <div class="print-hd-item"><div class="print-hd-label">담당교사</div><div class="print-hd-value" id="phTeacher"></div></div>
+          <div class="print-hd-item"><div class="print-hd-label">희망진로</div><div class="print-hd-value" id="phCareer"></div></div>
+          <div class="print-hd-item"><div class="print-hd-label">국영수사과 등급</div><div class="print-hd-value" id="phGrade"></div></div>
+        </div>
+        <div class="print-sig">
+          <div class="print-sig-box"><div class="print-sig-line"></div>학생 확인</div>
+          <div class="print-sig-box"><div class="print-sig-line"></div>담당교사 서명</div>
+          <div class="print-sig-box"><div class="print-sig-line"></div>학부모 확인</div>
+        </div>
+      </div>
+
+      <div id="resultArea" style="display:none;flex-direction:column;gap:14px;">
+        <div class="sum-bar" id="sumBar"></div>
+        <div class="tab-wrap">
+          <div class="tab-hd">
+            <div class="tab-hd-top">
+              <span id="printInfo" style="font-size:12px;color:var(--sub);"></span>
+              <div class="tabs">
+                <div class="tab on" onclick="switchTab(this,'성적표')">📋 성적표</div>
+                <div class="tab" onclick="switchTab(this,'차트')">📈 차트</div>
+                <div class="tab" onclick="switchTab(this,'전형분석')">🎯 전형 분석</div>
+                <div class="tab" onclick="switchTab(this,'목표대학')">🏫 목표 대학</div>
+                <div class="tab" onclick="switchTab(this,'지원전략')">🗺️ 지원 전략</div>
+                <div class="tab" onclick="switchTab(this,'진학가이드')">🎓 진학 가이드</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-body">
+
+            <!-- 성적표 -->
+            <div class="tab-p on" id="tab-성적표">
+              <div class="sim-panel no-print">
+                <div class="sim-panel-hd">
+                  <span class="sim-panel-title">📊 석차 시뮬레이션 — "만약 석차가 변한다면?" 상담용 도구</span>
+                  <button class="sbn rst" onclick="resetAllSim()">🔄 전체 초기화</button>
+                </div>
+                <div class="sim-controls">
+                  <div class="sim-grp"><label>전체 ▲ 상승:</label>
+                    <button class="sbn up" onclick="adjustGlobal(-1)">▲1등</button>
+                    <button class="sbn up" onclick="adjustGlobal(-5)">▲5등</button>
+                    <button class="sbn up" onclick="adjustGlobal(-10)">▲10등</button>
+                  </div>
+                  <div class="sim-div"></div>
+                  <div class="sim-grp"><label>현재 상태:</label><span class="sim-status" id="globalDisp">현재 석차</span></div>
+                  <div class="sim-div"></div>
+                  <div class="sim-grp"><label>전체 ▼ 하락:</label>
+                    <button class="sbn dn" onclick="adjustGlobal(1)">▼1등</button>
+                    <button class="sbn dn" onclick="adjustGlobal(5)">▼5등</button>
+                    <button class="sbn dn" onclick="adjustGlobal(10)">▼10등</button>
+                  </div>
+                  <div class="sim-div"></div>
+                  <div style="font-size:12px;color:#6d28d9;background:#fff;padding:5px 12px;border-radius:8px;border:1px solid #c4b5fd;">💡 각 과목 행에서 개별 조절도 가능</div>
+                </div>
+              </div>
+              <div class="fbar no-print">
+                <span style="font-size:11px;font-weight:700;color:var(--sub2);text-transform:uppercase;letter-spacing:.5px;">필터</span>
+                <select class="inp" id="fG" onchange="renderTable()" style="width:auto;">
+                  <option value="all">전체 학년</option>
+                  <option value="1">1학년</option><option value="2">2학년</option><option value="3">3학년</option>
+                </select>
+                <select class="inp" id="fS" onchange="renderTable()" style="width:auto;">
+                  <option value="all">전체 학기</option>
+                  <option value="1학기">1학기</option><option value="2학기">2학기</option>
+                </select>
+                <select class="inp" id="fB" onchange="renderTable()" style="width:auto;">
+                  <option value="all">전체 교과</option>
+                  <option value="국어">국어</option><option value="수학">수학</option>
+                  <option value="영어">영어</option><option value="사회">사회</option><option value="과학">과학</option>
+                </select>
+                <button class="btn btn-sm" style="background:var(--navy);color:#fff;" onclick="sortDefault()">기본 정렬</button>
+                <span id="rowCount" style="margin-left:auto;font-size:12px;color:var(--sub2);"></span>
+              </div>
+              <div id="gradeTable"></div>
+            </div>
+
+            <!-- 차트 -->
+            <div class="tab-p" id="tab-차트">
+              <div class="chart-grid" style="margin-bottom:16px;">
+                <div class="chart-box"><h4>학기별 국영수사과 평균 추이</h4><svg id="trendSVG" width="100%" height="210" viewBox="0 0 420 210"></svg></div>
+                <div class="chart-box"><h4>교과별 평균 레이더</h4><svg id="radarSVG" width="100%" height="210" viewBox="0 0 300 210"></svg></div>
+              </div>
+              <div class="chart-grid">
+                <div class="chart-box"><h4>과목별 원점수 vs 평균</h4><svg id="barSVG" width="100%" height="210" viewBox="0 0 500 210"></svg></div>
+                <div class="chart-box"><h4>교과 조합별 환산 등급</h4><div id="comboTable" style="overflow-x:auto;border-radius:8px;border:1px solid var(--bd);"></div></div>
+              </div>
+            </div>
+
+            <!-- 전형분석 -->
+            <div class="tab-p" id="tab-전형분석"><div id="formContent"></div></div>
+
+            <!-- 목표대학 -->
+            <div class="tab-p" id="tab-목표대학">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;" class="no-print">
+                <label style="font-size:13px;font-weight:700;color:var(--navy);">🎯 목표 대학군:</label>
+                <select class="inp" id="goalSel" onchange="renderGoal()" style="width:auto;">
+                  <option value="0">메디컬·최상위</option><option value="1">서울 상위권</option>
+                  <option value="2" selected>서울 중상위권</option><option value="3">서울 중위권</option>
+                  <option value="4">서울·수도권 주요</option><option value="5">거점 국립대학</option>
+                  <option value="6">수도권 중하위권</option>
+                </select>
+              </div>
+              <div id="goalContent"></div>
+            </div>
+
+            <!-- 지원전략 -->
+            <div class="tab-p" id="tab-지원전략"></div>
+
+            <!-- 진학가이드 -->
+            <div class="tab-p" id="tab-진학가이드">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;" class="no-print">
+                <span style="font-size:13px;font-weight:700;">재적 인원 기준:</span>
+                <input type="number" class="inp" id="stdN" value="150" onchange="renderGuide()" style="width:65px;text-align:center;">
+                <span style="font-size:13px;">명</span>
+              </div>
+              <div id="guideContent"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -765,25 +892,31 @@ function resetAll() {
    'snKor','snMath','snEng','snT1','snT2','bkBongsa'].forEach(function(id){
     var el = document.getElementById(id); if (el) el.value = '';
   });
-  ['bkSeTeuk','bkDongari','bkSusang'].forEach(function(id){
+  ['bkSeTeuk','bkDongari'].forEach(function(id){
     var el = document.getElementById(id); if (el) el.selectedIndex = 1;
   });
   document.getElementById('sDate').value = new Date().toISOString().slice(0,10);
   document.getElementById('exF').value = '';
-  document.getElementById('rightEmpty').style.display = 'flex';
-  document.getElementById('resultArea').style.display = 'none';
+  var diRows = document.getElementById('diRows');
+  if (diRows) diRows.innerHTML = '';
+  // Return to landing
+  document.getElementById('analysisView').style.display = 'none';
+  document.getElementById('landing').style.display = 'flex';
   document.getElementById('leftSummary').style.display = 'none';
-  document.getElementById('leftUpload').style.display = '';
-  var gd = document.getElementById('globalDisp');
-  if (gd) gd.textContent = '현재 석차';
+  document.getElementById('resultArea').style.display = 'none';
+  switchInputMode('excel');
 }
 
 function showResult() {
-  document.getElementById('rightEmpty').style.display = 'none';
-  document.getElementById('resultArea').style.display = 'flex';
+  document.getElementById('landing').style.display = 'none';
+  var av = document.getElementById('analysisView');
+  av.style.cssText = 'flex:1;overflow:hidden;display:flex;';
   document.getElementById('leftSummary').style.display = 'block';
-  document.getElementById('leftUpload').style.display = 'none';
+  document.getElementById('resultArea').style.display = 'flex';
+  var gd = document.getElementById('globalDisp');
+  if (gd) gd.textContent = '현재 석차';
   sortData('d', false);
+  updateBkSnCompact();
   renderAll();
 }
 
@@ -987,8 +1120,11 @@ function renderTable() {
       rowBg = chg2 < 0 ? 'background:rgba(16,185,129,.06);' : chg2 > 0 ? 'background:rgba(239,68,68,.06);' : '';
     }
 
+    // 수동 입력 행 표시
+    var isManual = !!d._manual;
+
     // 조절 버튼
-    var canSim = !isNaN(gn) && !isNaN(parseInt(d.t)) && parseInt(d.t) > 0;
+    var canSim = !isManual && !isNaN(gn) && !isNaN(parseInt(d.t)) && parseInt(d.t) > 0;
     var thisDelta = (simDelta[idx] || 0) + globalDelta;
     var deltaDisp = thisDelta === 0 ? ''
       : '<div style="font-size:10px;font-weight:700;color:'+(thisDelta<0?'#16a34a':'#dc2626')+';">'+
@@ -1002,8 +1138,9 @@ function renderTable() {
         + '</div>'
       : '<span style="color:#cbd5e1;font-size:12px;">-</span>';
 
-    h += '<tr style="'+rowBg+'">'
-      + '<td><b>'+d.g+'</b></td><td class="sem">'+d.sm+'</td><td style="color:#475569;font-size:12px;">'+d.sG+'</td>'
+    var manualBadge = isManual ? '<span style="font-size:9px;background:#fef3c7;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:1px 5px;margin-left:4px;font-weight:700;">직접입력'+(d._rank?' ('+d._rank+'등)':'')+'</span>' : '';
+    h += '<tr style="'+rowBg+(isManual?'background:rgba(254,243,199,.3);':'')+'">'
+      + '<td><b>'+d.g+'</b></td><td class="sem">'+d.sm+manualBadge+'</td><td style="color:#475569;font-size:12px;">'+d.sG+'</td>'
       + '<td style="text-align:left;padding-left:10px;font-weight:600;">'+d.sN+'</td>'
       + '<td>'+d.u+'</td>'
       + '<td style="color:var(--blue);font-weight:800;font-size:14px;">'+d.r+'</td>'
@@ -1144,7 +1281,7 @@ function renderRadar() {
   });
   if (scores.every(function(s){ return !isNaN(s); })) {
     var ptStr=scores.map(function(s,i){ var ratio=(5-Math.min(s,5))/4; return (cx+r*ratio*Math.cos(ang[i]))+','+(cy+r*ratio*Math.sin(ang[i])); }).join(' ');
-    area='<polygon points="'+ptStr+'" fill="rgba(26,115,232,.18)" stroke="var(--blue)" stroke-width="2"/>';
+    area='<polygon points="'+ptStr+'" fill="rgba(46,125,50,.18)" stroke="var(--blue)" stroke-width="2"/>';
     dots=scores.map(function(s,i){
       var ratio=(5-Math.min(s,5))/4, px=cx+r*ratio*Math.cos(ang[i]), py=cy+r*ratio*Math.sin(ang[i]);
       return '<circle cx="'+px+'" cy="'+py+'" r="4" fill="var(--blue)" stroke="#fff" stroke-width="1.5"/>'
@@ -1170,13 +1307,13 @@ function renderBar() {
   });
   items.forEach(function(d,i){
     var cx=PL+i*gap+gap/2, rH=cH*(d.r/100), mH=cH*(d.m/100);
-    bars+='<rect x="'+(cx-bw-1)+'" y="'+(PT+cH-rH)+'" width="'+bw+'" height="'+rH+'" fill="rgba(26,115,232,.75)" rx="2"/>'
+    bars+='<rect x="'+(cx-bw-1)+'" y="'+(PT+cH-rH)+'" width="'+bw+'" height="'+rH+'" fill="rgba(46,125,50,.75)" rx="2"/>'
          +'<rect x="'+(cx+1)+'" y="'+(PT+cH-mH)+'" width="'+bw+'" height="'+mH+'" fill="rgba(180,180,180,.65)" rx="2"/>';
     var nm=(d.sN||'').replace('공통','').replace('통합','').slice(0,4);
     xL+='<text x="'+cx+'" y="'+(PT+cH+12)+'" text-anchor="middle" font-size="9" fill="#777" transform="rotate(-35,'+cx+','+(PT+cH+12)+')">'+nm+'</text>';
   });
   el.innerHTML=g2+bars+xL
-    +'<rect x="'+PL+'" y="'+(PT-12)+'" width="9" height="8" fill="rgba(26,115,232,.75)"/><text x="'+(PL+12)+'" y="'+(PT-5)+'" font-size="10" fill="#555">원점수</text>'
+    +'<rect x="'+PL+'" y="'+(PT-12)+'" width="9" height="8" fill="rgba(46,125,50,.75)"/><text x="'+(PL+12)+'" y="'+(PT-5)+'" font-size="10" fill="#555">원점수</text>'
     +'<rect x="'+(PL+55)+'" y="'+(PT-12)+'" width="9" height="8" fill="rgba(180,180,180,.65)"/><text x="'+(PL+68)+'" y="'+(PT-5)+'" font-size="10" fill="#555">과목평균</text>';
 }
 
@@ -1229,7 +1366,7 @@ function renderForm() {
   // 수능 최저 분석 섹션
   var snResult = checkSuneungMin();
   if (snResult) {
-    fHtml += '<div style="margin-top:14px;padding:14px;background:#f0f7ff;border-radius:8px;border:1px solid #bfdbfe;">'
+    fHtml += '<div style="margin-top:14px;padding:14px;background:#f0f7ff;border-radius:8px;border:1px solid #a5d6a7;">'
       +'<div style="font-weight:700;font-size:13px;color:var(--navy);margin-bottom:10px;">📝 수능 최저 충족 예측'
       +'<span style="font-size:11px;font-weight:400;color:var(--sub);margin-left:8px;">최우수 2개합: '+snResult.best2+(snResult.best3<999?' / 3개합: '+snResult.best3:'')+'</span></div>'
       +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">';
@@ -1282,7 +1419,7 @@ function renderGoal() {
   }
   var el=document.getElementById('goalContent');
   if(!el)return;
-  el.innerHTML='<div style="background:linear-gradient(135deg,#e8f0fe,#f8faff);padding:14px;border-radius:8px;margin-bottom:14px;border:1px solid #c5cae9;">'
+  el.innerHTML='<div style="background:linear-gradient(135deg,#e8f5e9,#f8faff);padding:14px;border-radius:8px;margin-bottom:14px;border:1px solid #c8e6c9;">'
     +'<div style="font-size:17px;font-weight:700;color:var(--navy);">🎯 목표: <span style="color:var(--red)">'+goal.n+'</span></div>'
     +'<div style="font-size:13px;color:var(--sub);margin-top:4px;">현재 국영수사과 — 5등급: '+core.g+' / 9등급: '+core.g9+'</div></div>'
     +'<div class="goal-cards">'
@@ -1348,12 +1485,12 @@ function renderGuide() {
     var d2=[[2.0,2.8,2.4,'아주대'],[2.1,2.9,2.5,'인하대'],[2.2,2.8,2.5,'차의과학대'],[2.2,3.0,2.6,'한양(에리카)'],[2.3,2.9,2.6,'단국대(죽전)'],[2.4,3.0,2.2,'경인교대'],[2.4,3.0,2.7,'을지대(성남)'],[2.4,3.2,2.8,'항공대'],[2.5,3.3,2.9,'가천대'],[2.6,3.4,3.0,'경기대'],[2.6,3.4,3.0,'인천대'],[2.9,3.7,3.3,'가톨릭(성심)'],[3.0,3.8,3.4,'강원대'],[3.1,4.0,3.5,'한국공학대'],[3.3,4.1,3.7,'한림대'],[3.4,4.4,3.9,'강남대'],[3.5,4.5,4.0,'수원대'],[3.6,4.5,4.05,'가톨릭관동대'],[3.7,4.6,4.15,'대진대'],[3.7,4.8,4.2,'성결대'],[4.0,5.0,4.5,'한신대'],[4.0,5.2,4.6,'평택대'],[4.2,5.3,4.75,'강릉원주대'],[4.3,5.4,4.85,'안양대'],[4.3,5.5,4.9,'협성대'],[4.6,6.0,5.3,'신한대']];
     var d3=d1.map(function(x){return[x[0]+.4,x[1]+.8,x[2]+.6,x[3]];});
     var d4=d2.map(function(x){return[x[0]+.5,x[1]+1.0,x[2]+.7,x[3]];});
-    h+='<div style="margin-top:18px;border-top:2px dashed #c5cae9;padding-top:18px;">'
+    h+='<div style="margin-top:18px;border-top:2px dashed #c8e6c9;padding-top:18px;">'
       +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;">'
       +'<h4 style="color:var(--navy);font-size:14px;">📊 세부 진학 가능 라인 <span style="font-size:11px;color:var(--red);font-weight:400;">(붉은 선 = 현재 9등급)</span></h4>'
       +'<span style="font-size:11px;color:var(--sub);background:#eef1f5;padding:3px 10px;border-radius:10px;">출처: 센진학(서울시교육청)</span></div>'
-      +'<div class="chart-grid">'+uniChart('📌 교과전형 [서울/메디컬/주요대]',d1,g9)+uniChart('📌 교과전형 [경기/인천/강원권]',d2,g9)
-      +uniChart('📌 종합전형 [서울/메디컬/주요대]',d3,g9)+uniChart('📌 종합전형 [경기/인천/강원권]',d4,g9)+'</div></div>';
+      +'<div class="chart-grid">'+uniChart('📌 교과전형 [서울/메디컬/주요대]',d1,g9)+uniChart('📌 교과전형 [경기/인천권]',d2,g9)
+      +uniChart('📌 종합전형 [서울/메디컬/주요대]',d3,g9)+uniChart('📌 종합전형 [경기/인천권]',d4,g9)+'</div></div>';
   }
   var gc=document.getElementById('guideContent');
   if(gc)gc.innerHTML=h;
@@ -1371,11 +1508,140 @@ function uniChart(title,data,uG){
   var st=100/data.length;
   data.forEach(function(d,i){
     var L=i*st+st*0.1,W=st*0.8,T=Math.max(0,(d[0]-1)*20),H=Math.max(1,(d[1]-d[0])*20),A=((d[2]-d[0])/(d[1]-d[0]))*100;
-    h+='<div style="position:absolute;left:'+L+'%;top:'+T+'%;width:'+W+'%;height:'+H+'%;background:#d0e1f9;border:1px solid #1a237e;z-index:2;border-radius:2px;">'
-      +'<div style="position:absolute;top:'+A+'%;left:0;width:100%;height:2px;background:#1a237e;"></div></div>'
+    h+='<div style="position:absolute;left:'+L+'%;top:'+T+'%;width:'+W+'%;height:'+H+'%;background:#c8e6c9;border:1px solid #1b5e20;z-index:2;border-radius:2px;">'
+      +'<div style="position:absolute;top:'+A+'%;left:0;width:100%;height:2px;background:#1b5e20;"></div></div>'
       +'<div style="position:absolute;bottom:100%;left:'+(L+W/2)+'%;margin-bottom:5px;font-size:9.5px;font-weight:700;color:#333;transform:rotate(-55deg);transform-origin:bottom left;white-space:nowrap;">'+d[3]+'</div>';
   });
   return h+'</div></div>';
+}
+
+// ════════════════════════════════════════════
+// 직접 입력 모드
+// ════════════════════════════════════════════
+var DI_DEFAULTS = [
+  {sG:'국어', sN:'공통국어', u:4},
+  {sG:'수학', sN:'공통수학Ⅰ', u:4},
+  {sG:'영어', sN:'공통영어Ⅰ', u:4},
+  {sG:'사회(역사/도덕포함)', sN:'통합사회Ⅰ', u:3},
+  {sG:'과학', sN:'통합과학Ⅰ', u:3}
+];
+var diRowIdx = 0;
+
+function switchInputMode(mode) {
+  document.getElementById('excelZone').style.display  = mode === 'excel' ? '' : 'none';
+  document.getElementById('directZone').style.display = mode === 'direct' ? '' : 'none';
+  document.getElementById('modeExcel').classList.toggle('on', mode === 'excel');
+  document.getElementById('modeDirect').classList.toggle('on', mode === 'direct');
+  if (mode === 'direct' && document.getElementById('diRows').children.length === 0) {
+    initDirectRows();
+  }
+}
+
+function initDirectRows() {
+  var tbody = document.getElementById('diRows');
+  tbody.innerHTML = '';
+  DI_DEFAULTS.forEach(function(d) { addDirectRow(d.sG, d.sN, d.u); });
+}
+
+function addDirectRow(sG, sN, u) {
+  var id = 'dr' + (diRowIdx++);
+  var tbody = document.getElementById('diRows');
+  var tr = document.createElement('tr');
+  tr.id = id;
+
+  // 교과 선택 옵션
+  var subjectOpts = [
+    ['국어','국어'],['수학','수학'],['영어','영어'],
+    ['사회(역사/도덕포함)','사회'],['과학','과학'],
+    ['체육','체육'],['예술','예술'],['기술·가정/제2외국어/한문/교양','기타']
+  ];
+  var selHtml = '<select class="di-inp" style="width:100%;font-size:11px;" id="'+id+'_sG">';
+  subjectOpts.forEach(function(o) {
+    selHtml += '<option value="'+o[0]+'"'+(sG===o[0]?' selected':'')+'>'+o[1]+'</option>';
+  });
+  selHtml += '</select>';
+
+  tr.innerHTML =
+    '<td><input class="di-inp" id="'+id+'_sN" placeholder="과목명" value="'+(sN||'')+'"><br>'+selHtml+'</td>'
+    +'<td style="padding:3px 2px;"><input class="di-inp di-gr" id="'+id+'_u" type="number" min="1" max="8" value="'+(u||4)+'" style="padding:4px 2px;font-size:12px;text-align:center;width:100%;min-width:30px;"></td>'
+    +'<td><input class="di-inp" id="'+id+'_rank" type="number" min="1" placeholder="" style="color:var(--blue);font-size:13px;font-weight:800;min-width:52px;" oninput="calcRowGrade(\''+id+'\')" ></td>'
+    +'<td><input class="di-inp" id="'+id+'_t" type="number" min="1" placeholder="" style="font-size:12px;min-width:52px;" oninput="calcRowGrade(\''+id+'\')" ></td>'
+    +'<td><span id="'+id+'_grDisp" style="font-size:15px;font-weight:900;color:var(--red);">-</span></td>'
+    +'<td><button class="di-del" onclick="removeDirectRow(\''+id+'\')">✕</button></td>';
+
+  tbody.appendChild(tr);
+}
+
+function removeDirectRow(id) {
+  var tr = document.getElementById(id);
+  if (tr) tr.remove();
+}
+
+// 석차 → 등급 실시간 계산 표시
+function calcRowGrade(id) {
+  var rankEl = document.getElementById(id+'_rank');
+  var tEl    = document.getElementById(id+'_t');
+  var dispEl = document.getElementById(id+'_grDisp');
+  if (!rankEl || !tEl || !dispEl) return;
+  var rank = parseInt(rankEl.value);
+  var t    = parseInt(tEl.value);
+  if (!isNaN(rank) && !isNaN(t) && t > 0 && rank >= 1 && rank <= t) {
+    var g = rankToGrade(rank, t);
+    dispEl.textContent = g + '등급';
+    var cls = g <= 2 ? '#15803d' : g <= 4 ? '#d97706' : '#b91c1c';
+    dispEl.style.color = cls;
+  } else {
+    dispEl.textContent = '-';
+    dispEl.style.color = '#94a3b8';
+  }
+}
+
+function startDirectAnalysis() {
+  var g    = parseInt(document.getElementById('diGrade').value) || 1;
+  var sem  = document.getElementById('diSem').value + '학기';
+  var rows = document.getElementById('diRows').querySelectorAll('tr');
+  var newData = [];
+  var errors = [];
+
+  rows.forEach(function(tr) {
+    var id   = tr.id;
+    var sN   = (document.getElementById(id+'_sN')   || {value:''}).value.trim();
+    var sG   = (document.getElementById(id+'_sG')   || {value:''}).value;
+    var u    = parseFloat((document.getElementById(id+'_u') || {value:'4'}).value) || 4;
+    var rank = parseInt((document.getElementById(id+'_rank') || {value:''}).value);
+    var t    = parseInt((document.getElementById(id+'_t')    || {value:''}).value);
+    if (!sN) return;
+    if (isNaN(rank) || rank < 1) { errors.push(sN + ': 석차 미입력'); return; }
+    if (isNaN(t)    || t < 1)   { errors.push(sN + ': 재적수 미입력'); return; }
+    if (rank > t)               { errors.push(sN + ': 석차(' + rank + ')가 재적수(' + t + ')보다 큼'); return; }
+    var grInt = rankToGrade(rank, t);
+    newData.push({
+      g: g, sm: sem, sG: sG, sN: sN, u: u,
+      r: '-', m: '-', d: '-', gT: '-',
+      gr: String(grInt),
+      t: t,
+      sd: '-', p: '-',
+      _rank: rank,   // 원래 석차 보존
+      _manual: true
+    });
+  });
+
+  if (errors.length > 0) {
+    alert('입력 오류:\n' + errors.join('\n'));
+    return;
+  }
+  if (newData.length === 0) {
+    alert('과목명·석차·재적수를 입력해 주세요.');
+    return;
+  }
+
+  // 기존 tD에서 같은 학년·학기 수동 데이터는 교체, 나머지는 유지
+  tD = tD.filter(function(d) {
+    return !(d._manual && d.g === g && d.sm === sem);
+  }).concat(newData);
+
+  simDelta = {}; globalDelta = 0;
+  showResult();
 }
 
 // ════════════════════════════════════════════
@@ -1395,12 +1661,10 @@ function getBigyogwa() {
   var seTeuk  = parseInt((document.getElementById('bkSeTeuk')  || {value:'2'}).value);
   var dongari = parseInt((document.getElementById('bkDongari') || {value:'2'}).value);
   var bongsa  = parseInt((document.getElementById('bkBongsa')  || {value:'0'}).value) || 0;
-  var susang  = parseInt((document.getElementById('bkSusang')  || {value:'1'}).value);
   var seTeukS  = [5, 14, 20, 25][seTeuk]  || 14;
   var dongariS = [5, 13, 18, 22][dongari] || 13;
   var bongsaS  = bongsa >= 60 ? 20 : bongsa >= 30 ? 14 : bongsa >= 10 ? 8 : 3;
-  var susangS  = [4, 12, 18][susang] || 4;
-  return Math.min(100, seTeukS + dongariS + bongsaS + susangS + 10);
+  return Math.min(100, seTeukS + dongariS + bongsaS + 15);
 }
 
 function checkSuneungMin() {
@@ -1586,6 +1850,27 @@ function renderStrategy() {
   }
 
   el.innerHTML = html;
+}
+
+function backToLanding() {
+  document.getElementById('analysisView').style.display = 'none';
+  document.getElementById('landing').style.display = 'flex';
+}
+
+function updateBkSnCompact() {
+  var seTeuk  = parseInt((document.getElementById('bkSeTeuk')  || {value:'2'}).value);
+  var dongari = parseInt((document.getElementById('bkDongari') || {value:'2'}).value);
+  var bongsa  = (document.getElementById('bkBongsa') || {value:''}).value;
+  var seTeukL  = ['미흡','보통','우수','매우우수'][seTeuk] || '우수';
+  var dongariL = ['미흡','보통','우수(전공연계)'][dongari] || '보통';
+  var bc = document.getElementById('bkCompact');
+  if (bc) bc.innerHTML = '세특: <b>'+seTeukL+'</b> &nbsp;|&nbsp; 동아리: <b>'+dongariL+'</b>'+(bongsa?' &nbsp;|&nbsp; 봉사: <b>'+bongsa+'h</b>':'');
+  var sn = getSuneung();
+  var parts = [];
+  var labels = ['국','수','영','탐①','탐②'];
+  [sn.kor,sn.math,sn.eng,sn.t1,sn.t2].forEach(function(g,i){ if(g) parts.push(labels[i]+' '+g+'등급'); });
+  var sc = document.getElementById('snCompact');
+  if (sc) sc.innerHTML = parts.length ? '수능: <b>'+parts.join(' &nbsp;')+'</b>' : '<span style="color:var(--sub2)">수능 미입력</span>';
 }
 
 // ════════════════════════════════════════════
